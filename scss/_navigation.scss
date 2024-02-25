@@ -1,0 +1,41 @@
+
+.nav-section.vertical-navbar {
+    .nav.navbar.iconic-vertical {
+        width: 305px;
+        font-family: Poppins;
+
+        .nav-item {
+            width: 100%;
+            margin-bottom: 15px;
+
+            a {
+                color: #4a4a4a;
+                transition: .3s;
+
+                &:hover {
+                    @include gradient-text;
+                }
+            }
+            .nav-link {
+                width: max-content;
+                color: #444;
+
+                i {
+                    &::before {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .nav-item.active {
+            a {
+                @include gradient-text;
+            }
+        }
+        .nav-item.top-divider {
+            border-top: 1px solid #d7d7d7;
+            padding-top: 10px;
+            
+        }
+    }
+}

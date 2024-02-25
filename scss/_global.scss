@@ -1,0 +1,640 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #c773700d;
+    
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+label.cyclic {
+    cursor: pointer;
+}
+
+/// ###### Profile Pic Styles ##### ////
+.profile-pic {            
+    img {
+        width: 40px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+    }
+}
+.profile-pic.story-active {
+    padding: 2px;
+    border-radius: 50%;
+    background: $story-border;
+}
+/// -------------------------------/////
+
+.d-table {
+    display: table;
+}
+
+.under-nav {
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 980px;
+}
+
+.content-width {
+    width: max-content;
+}
+
+.w-150 {
+    width: 150px !important;
+    margin-right: 0;
+}
+
+.sticky-container-5 {
+    position: sticky;
+    top: 5rem;
+}
+
+.dark-shadow {
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.2);
+}
+
+.shortcut {
+    .sc {
+        width: 35px;
+        border-radius: 20px;
+        border: 2px solid $primary-color;
+    }
+}
+
+.u-collapse {
+    display: block;
+}
+
+.u-collapsed {
+    display: none;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.navbar.border-btm {
+    border-bottom: 2px #eaeaea solid;
+}
+
+.poppins {
+    font-family: Poppins-Regular;
+}
+
+
+
+.easeTransition {
+    transition: all .3s ease-out 0s;
+}
+
+.box {
+    border: 1px solid $border-grey;
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.page-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family : Poppins-bold ;
+    text-transform: uppercase;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.title-text {
+    font-size: 20px;
+}
+
+.text-14{
+    font-size: 14px !important;
+}
+
+/* ####### START OF OWL-CAROUSEL STYLES ####### */
+
+.owl-dots {
+    .owl-dot.active {
+        span {
+            background: $secondary-color !important;
+        }
+    }
+    .owl-dot {
+        &:hover {
+            span {
+                background: $secondary-color !important;
+            }
+        }
+    }
+}
+.owl-prev,
+    .owl-next {
+        @include transition-duration(500ms);
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        height: 50px;
+        margin-top: -25px;
+        z-index: 10;
+        text-align: center;
+        line-height: 50px;
+        color: $white;
+        font-size: 40px;
+        opacity: 0.5;
+
+        @media #{$breakpoint-lg} {
+            left: -15px;
+        }
+
+        @media #{$breakpoint-xs} {
+            left: -15px;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+}
+
+.owl-next {
+    left: auto;
+    right: -30px;
+
+    @media #{$breakpoint-lg} {
+        right: -15px;
+    }
+
+    @media #{$breakpoint-xs} {
+        right: -15px;
+       }
+}
+/* ####### END OF OWL-CAROUSEL STYLES ####### */
+/* ####### START OF BUTTON STYLES ####### */
+
+.button {
+    font-size: 14px;
+    padding: .6rem 2rem;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: $gradient-color;
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: $box-shadow;
+    font-family: Poppins;
+
+    &:hover {
+        background: whitesmoke;
+        background-clip: padding-box;
+        color: #000;
+    }
+
+    &::after {
+        position: absolute;
+        top: -2px; left: -2px;
+        bottom: -2px; right: -2px;
+        background: $gradient-color;
+        content: "";
+        z-index: -1;
+        border-radius: 4px;
+    } 
+}
+.button.primary-button.unfollow {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: #000;
+}
+
+.button.dm-button {
+    background: whitesmoke;
+    color: #854fee;
+    box-shadow: $box-shadow;
+    font-size: 1.3rem;
+    padding: .2rem 1rem;
+}
+
+.button.secondary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+
+    &:hover {
+        background: $gradient-color;
+        color: whitesmoke;
+        box-shadow: $box-shadow;
+    }
+    &::after {
+        position: absolute;
+        top: -2px; left: -2px;
+        bottom: -2px; right: -2px;
+        background: $gradient-color;
+        content: "";
+        z-index: -1;
+        border-radius: 4px;
+    }
+}
+
+.tertiary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+    border: none !important;
+    color: $dark-2;
+    padding: .6rem 2rem;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    box-shadow: $box-shadow;
+
+    &:hover {
+        background: $dark-1;
+        color: whitesmoke;
+    }
+}
+
+.menu-button {
+    background: $border-grey;
+    border: none !important;
+    color: #000;
+    padding: .6rem 6.7rem;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: all .3s ease;
+
+    &:hover {
+        background: #fff;
+        color: $dark-2;
+        box-shadow: $box-shadow;
+    }
+}
+
+.button.simple-button {
+    background: white;
+
+    &:hover {
+        background: $primary-color;
+    }
+}
+
+.button.quad-button {
+    background: $gradient-color;
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: all .6s ease;
+    box-shadow: $box-shadow;
+    font-family: Poppins;
+    border: none;
+
+    &:hover {
+        background: $opposite-gradient;
+        color: white;
+    }
+
+    &::after {
+        position: absolute;
+        top: -2px; left: -2px;
+        bottom: -2px; right: -2px;
+        background: $gradient-color;
+        content: "";
+        z-index: -1;
+        border-radius: 4px;
+    } 
+}
+
+.button.simple-button-2{
+    background: $primary-color;
+
+    &:hover {
+        background: white;
+    }
+}
+
+/* ####### End OF BUTTON STYLES ####### */
+
+.image-fluid {
+    width: 600px;
+}
+
+.section.about-area {
+    padding: 5rem 0.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-family: Poppins;
+    .para {
+        font-size: 15px;
+    }
+    .title-h1 {
+        @include gradient-text;
+    }
+}
+
+.section.section-gradient-bg {
+    background: $gradient-dark;
+}
+
+.gradient-bg-aft {
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/banner_img.png);
+    background-repeat: no-repeat;
+    background-size: content;
+    background-position: center;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $gradient-dark;
+        z-index: -1;
+        opacity: .7;        
+    }
+}
+
+.section-gradient-bg, .gradient-bg-aft, .owl-carousel {
+    .section-title {
+        .title-h1 {
+            color: #fff;
+            @include gradient-text-unset;
+        }
+    }
+    .para {
+        color: #a688ea;
+    }
+}
+
+button.cyclic {
+    background: $gradient-color;
+    color: #fff;
+    border: none;
+    width: 43px;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 50%;
+    height: 43px;
+    &:hover {
+        outline: none;
+    }
+}
+
+.para {
+    font-family: ProductSans-Regular !important;
+}
+
+.para-med {
+    font-family: ProductSans-Med !important;
+}
+.title-h1 {
+    font-family: Poppins-Medium;
+}
+
+.banner-fluid-100 {
+    height: 100vh;
+}
+
+.banner-fluid-90 {
+    height: 90vh;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.whitesmoke-bg {
+    background-color: whitesmoke;
+}
+
+.box-shadow {
+    box-shadow: $box-shadow;
+}
+
+.fs-3rem {
+    font-style: 3rem;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.justify-content-center {
+    @include flex-center;
+}
+
+
+.hint-text {
+    color: #7867bd;
+}
+
+.box-width {
+    width: 600px;
+}
+
+.site-main {
+    margin-top: 65px;
+}
+
+
+.floating-icon {
+    position: absolute;
+    top: calc(50% - 150px);
+    right: 100px;
+}
+
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+    
+}
+.v-align {
+    align-self: center;
+}
+
+.sub-section.footer {
+    border: none;
+    .seo-link {
+        font-size: 13px;
+        color: $text-grey;
+        margin-right: 3px;
+        span {
+            margin-left: 6px;
+        }
+    }
+}
+
+.left-pp-area .single-section-item:hover {
+	background: $hover-bg;
+}
+
+.hover {
+    transition: .3s background ease-in-out;
+    &:hover {        
+        background: $hover-bg;
+    }
+}
+
+    
+
+//////////////////////////////////// H1,2,3,4,5,6 | Para | A /////////////////////////////////
+
+.ra-heading {
+    font-family: Poppins-Medium;
+}
+
+.ra-sub-heading {
+    font-family: Poppins;
+}
+
+.ss-content {
+    color: $secondary-color;
+}
+
+.lc-section-heading {
+    font-family: Poppins-Medium;
+    text-transform: uppercase;
+    color: $text-grey;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.sub-section {
+    border-bottom: 1px solid #c1c1c1;
+    .subsection-details {
+        margin-left: 10px;
+        .ra-sub-heading {
+            align-self: center;
+            font-family: Poppins;        
+        }
+        .para {
+            font-size: 13px;
+            color: $nav-grey;
+            font-family: Poppins;
+        }
+    }
+}
+
+//////////////////////////////////// PADDING | MARGIN | SIZING | GRID /////////////////////////////////
+.rounded-container {
+    border-radius: 15px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.1);
+    margin-top: 40px;
+}
+
+.border-radius {
+    border-radius: 15px;
+}
+
+.padding-x-35 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.padding-x-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.padding-x-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.m-lr-auto {
+    @include m-lr-auto;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-30p {
+    margin-right: 30px;
+}
+
+.site-main.mt {
+    margin-top: 55px;
+}
+
+/////////////////////////////////// ICONS ///////////////////////////////////////////////
+.primary-icon {
+    @include gradient-text
+}
+
+.secondary-icon {
+    padding: 10px;
+    color: #fff;
+    background: $gradient-color;
+    border-radius: 100%;
+}
+
+i.secondary-icon {
+    &::before {
+        font-size: 1.3rem;
+    }
+}
+
+
+//////////////////////////////////// GLOBAL END ////////////////////////////////////////////

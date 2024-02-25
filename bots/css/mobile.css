@@ -1,0 +1,226 @@
+@media (max-width: 992px) {
+	.header_area .main-menu .navbar .navbar-underscreen .menu_nav {
+		position: fixed !important;
+		bottom: 0 !important;
+	}
+	.header_area .main-menu .navbar .navbar-underscreen .menu_nav .nav-item {
+	    width: 20% !important;
+	    text-align: center;
+	    margin-right: 0 !important
+	}
+	.d-lg-none {
+		display: block;
+	}
+}
+
+@media (min-width:1025px) { 
+	.lg-only {
+		display: block;
+	}
+
+	.md-sm-only {
+		display: none !important;
+	}
+}
+
+
+@media only screen and (max-width:1024px) {	/*SMALL SCREENS*/
+
+	.lg-only {
+		display: none !important;
+	}
+
+	.md-sm-only {
+		display: block;
+	}
+	.navbar.rel {
+		position: relative;
+	}
+	.close-icon {
+		position: absolute;
+		left: 1rem;
+	}
+
+	#responsive-nav {
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    bottom: 0;
+	    max-width: 270px;
+	    width: 0%;
+	    overflow: hidden;
+	    background-color: #FFF;
+	    -webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	    transform: translateX(-100%);
+	    -webkit-transition: 0.5s all;
+	    transition: 0.5s all;
+	    z-index: 9995;
+	}
+
+	#responsive-nav.open {
+	    width: 100%;
+	    -webkit-transform: translateX(0%);
+	    -ms-transform: translateX(0%);
+	    transform: translateX(0%);
+	}
+
+	#sm-navigation {
+	    background-color: #30323A;
+	}
+
+	#sm-navigation ul li a {
+		padding-left: 0;
+	}
+
+	#sm-navigation.shadow:after {
+	    content: "";
+	    position: fixed;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    bottom: 0;
+	    background-color: rgba(0, 0, 0, 0.7);
+	    z-index: 9990;
+	}
+
+	.sm-nav-link {
+		font-family: Poppins-Regular;
+		padding: .75rem 0rem;
+		display: block;
+	}
+
+	.feed-area {
+		padding: 0 !important;
+	}
+	.post, .rounded-container {
+		box-shadow: none !important;
+	}
+
+	.rounded-container {
+		padding: 0 !important;
+	}
+
+	.stories-area .stories .single-story .s-content .s-new-item-icon, .stories-area .stories .single-story .s-content .s-image img {
+		width: 70px !important;
+		height: 70px !important;
+		line-height: 60px !important;
+	}
+
+	.body {
+		background-color: #fff !important;
+	}
+
+	h5, h4, h3 {
+		font-size: .9rem !important;
+	}
+
+	h1, h2 {
+		font-size: 1rem !important;
+	}
+
+	.sm-heading {
+		font-size: 1.5rem !important;
+	}
+
+	.sm-md-border-none {
+		border: none !important;
+	}
+
+	.left-profile-area {
+		display: none;
+	}
+
+	.stories-area .stories .single-story .s-content .s-title p {
+		font-size: 12px !important;
+	}
+
+	.stories-area .stories .single-story .s-content .s-new-item-icon i::before {
+		font-size: 16px !important;
+	}
+
+	.stories-area .section-left-button {
+		
+	}
+
+	.post {
+		width: 100% !important;
+		max-width: unset !important;
+		border-radius: 0 !important;
+		border-top: 1px solid #e5e5e5 !important;
+		margin-top: 1rem !important;
+	}
+
+	.stories.owl-carousel {
+		padding: 1rem 0rem 0rem 0.5rem;
+	}
+
+	.post .post-head .post-compiler .post-by .post-by-title{
+		font-size: 14px !important;
+	}
+
+	.sm-no-row {
+		display: block !important;
+	}
+
+	/*****************************************************************************************/
+	/*TOP NAV BAR*/
+	.search-bar {
+		display: none !important;
+	}
+
+	.user-area {
+		display: none !important;
+	}
+
+	.account-header {
+		border-radius: 0 !important;
+		margin-top: 0px !important;
+	}
+
+	.account-header .short-info .profileimg-section {
+		top: 205px !important;
+		left: 2rem !important;
+	}
+	.account-header .short-info .profileimg-section .image-container img {
+		width: 110px !important;
+		border: 5px solid #fff;
+	}
+
+	.account-header .short-info .info {
+		margin-left: 1rem !important;
+	}
+
+	.account-header .short-info .profileimg-section .image-container::before {
+		display: none !important;
+	}
+	.account-header .backimg{
+		border-radius: 0 !important;
+	}
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
+	.profile-call-to-action {
+		position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+
+	.info.sm-padding {
+		padding-top: 3rem;
+	}
+
+	/*****************************************************************************************/
+	/*PROFILE ACC PAGE*/
+
+	.account-header .short-info {
+		border-radius: 0 !important;
+	}
+
+	.sm-md-displaced.navbar {
+		top: -60px !important;
+	}
+}

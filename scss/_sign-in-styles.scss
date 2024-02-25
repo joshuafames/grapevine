@@ -1,0 +1,42 @@
+/* ============ start OF Sign-In STYLES ====================*/
+.sign-up-area{
+    .section-title {
+        .title-icon {
+            margin-bottom: 15px;        
+
+            .icon-container {
+                width: 45px;
+                padding: 10px;
+                background: white;
+                border-radius: 10px;
+                @include m-lr-auto;
+                box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.59);
+            }
+            .icon {
+                @include gradient-text;
+            }
+        }
+    }
+}
+    
+
+.sign-up-area {
+    padding: 8rem;
+    
+    .title-h1 {
+        font-style: 2rem;
+        margin-top: 2rem;
+    }
+    .para {
+        margin-top: 1.3rem;
+        max-width: 650px;
+        @include m-lr-auto;
+    }
+    .site-buttons {
+        margin-top: 40px;
+        .button {
+            border-radius: 4px;
+        }
+    }
+}
+/* ============ END OF Sign-In STYLES ====================*/

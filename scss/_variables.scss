@@ -1,0 +1,169 @@
+
+
+
+/*===================== COLOR: Grey ========================*/
+
+$text-pri-color: #777777;
+$text-grey: #a0a0a0;
+$border-grey: rgb(224, 224, 224);
+$bg-grey: #f4f4f4f4;
+$nav-grey: #4a4a4a;
+
+/*===================== COLOR: WEB SPECIFIC ========================*/
+
+$story-border : linear-gradient(45deg, #ba54ce, #ea477c 50%, #ff7f42 100%);
+$gradient-color : linear-gradient(45deg, #ba54ce, #ea477c 50%, #ff7f42 100%);
+$opposite-gradient : linear-gradient(45deg, #ba54ce, #ea477c 50%, #ff7f42 100%);
+$story-border : linear-gradient(45deg, #ba54ce, #ea477c 50%, #ff7f42 100%);
+$mid-grad-color: #ea477c;
+$hover-bg: #fb734f4f;
+$primary-color: #ea477c;
+$secondary-color: #f25c66;
+
+/* $primary-color: #4458dc;
+$secondary-color: #854fee;
+$gradient-color: linear-gradient(90deg, #4458dc, #854fee 100%);
+$story-border: linear-gradient(90deg, #44b8dc, #c44fee 100%);
+$opposite-gradient: linear-gradient(90deg, #854fee, #4458dc 100%);*/
+$primary-text: #a2a0e1;
+
+$gradient-dark: linear-gradient(90deg, #1e2a79, #6433c1 100%);
+$gradient-bg: linear-gradient(90deg, #1a2671, #281351 100%);
+$dark-1: #6333c0;
+$dark-2: #4458dc;
+$primary: #4458dc;
+$shadow-one: 0px 10px 30px rgba(118, 85, 225, 0.3);
+$box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+/*===================== TEXT | SIZES | OTHERS ========================*/
+
+$nav-size-img: 150px;
+$nav-size-icon: 20px;
+$poppins: "Poppins";
+$white: #fff;
+
+/*===================== FONTS ========================*/
+
+
+@font-face{
+    font-family: "Poppins";
+    src: "../fonts/poppins/Poppins-Italic.ttf";
+}
+
+@font-face {
+  font-family: Poppins-Thin;
+  src: url('../fonts/poppins/Poppins-Thin.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url('../fonts/poppins/Poppins-Light.ttf'); 
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  }
+
+  @font-face {
+    font-family: ProductSans-Med;
+    src: url('../fonts/Google-sans-Font-Family/ProductSans-Medium.ttf'); 
+  }
+
+  @font-face {
+    font-family: ProductSans-Bold;
+    src: url('../fonts/Google-sans-Font-Family/ProductSans-Bold.ttf'); 
+  }
+
+/*<--------------- Mixins ------------>*/
+  @mixin gradient-text {
+    background: $gradient-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  @mixin gradient-text-format {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  @mixin gradient-text-unset {
+    background: unset !important;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+  }
+  @mixin m-lr-auto {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  @mixin flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  @mixin transition($value) {
+    -webkit-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+@mixin animation($value) {
+    -webkit-animation: $value;
+    animation: $value;
+}
+
+@mixin transition-duration($time) {
+    -webkit-transition-duration: $time;
+    -o-transition-duration: $time;
+    transition-duration: $time;
+}
+
+@mixin box-shadow($content) {
+    -webkit-box-shadow: $content;
+    box-shadow: $content;
+}
+  
+
+$bright-yellow: #fc0;
+$gradient-200: linear-gradient(to right, #ecc219, #e78500, #fc0);
+$overlay-color: #fff1ba;
+$text-yellow: #dbaf00;
+
+
+/*==================================Responsive===========================================*/
+// Xtra Large Breakpoint
+$breakpoint-xl: 'only screen and (min-width:1200px)';
+// Large Breakpoint
+$breakpoint-lg: 'only screen and (min-width:992px) and (max-width:1199px)';
+// Medium Breakpoint
+$breakpoint-md: 'only screen and (min-width:768px) and (max-width:991px)';
+// Small Breakpoint
+$breakpoint-sm: 'only screen and (min-width:576px) and (max-width:767px)';
+// Xtra Small Breakpoint
+$breakpoint-xs: 'only screen and (max-width:767px)';
+// Xtra Small Landscape Breakpoint
+$breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767px)';

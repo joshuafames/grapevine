@@ -1,0 +1,72 @@
+
+@import './_variables.scss';
+@import './_header.scss';
+@import './_feed.scss';
+@import './_login-styles.scss';
+@import './_search-page.scss';
+@import './_global.scss';
+@import './_client.scss';
+@import './_features.scss';
+@import './_sign-in-styles.scss';
+@import './_media-screens.scss';
+@import './_profile-page.scss';
+@import './_post-form.scss';
+@import './_navigation.scss';
+@import './_buttons.scss';
+@import './_messenger.scss';
+/// @import './_input-group.scss';
+
+/* ============ start OF Banner STYLES ====================*/
+
+.site-main {
+    .site-banner{
+        .site-title{
+            h3{
+                padding-top: 25%;
+                &::after {
+                    content: "";
+                    height: 1px;
+                    width: 16vw;
+                    background: #000;
+                    display: inline-block;
+                    margin-left: 5%;
+                    transform: translateY(-5px);
+                } 
+            }
+            .site-buttons {
+                margin-top: 20px;
+            }
+        }
+        .banner-image {
+            .banner-svg {
+                width: 500px;
+            }
+        }
+    }
+}
+
+.main-banner-title {
+    font-family: Poppins-SemiBold;
+    margin-top: 15px;
+}
+
+/* ============ END OF Banner STYLES ====================*/
+
+/* ============ START OF BODY STYLES ====================*/
+
+.site-main {
+    .about-area {
+        .about-title{
+            h2 > span {
+                display: block;
+                font-family: Poppins-Medium;
+                letter-spacing: 21px;
+            }
+        }
+    }
+}
+
+/* ============ END OF BODY STYLES ====================*/
+
+
+
